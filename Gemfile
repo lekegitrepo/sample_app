@@ -51,6 +51,8 @@ group :test do
   gem 'minitest-reporters'
   gem 'rails-controller-testing'
   gem 'webdrivers'
+  gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+  
 end
 
 group :production do
