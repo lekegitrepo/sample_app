@@ -37,6 +37,9 @@ gem 'bootstrap-will_paginate'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'carrierwave'
+gem 'mini_magick'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4'
@@ -61,10 +64,10 @@ group :test do
   gem 'rails-controller-testing'
   gem 'webdrivers'
   gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-  
 end
 
 group :production do
+  gem 'fog'
   gem 'pg'
 end
 
